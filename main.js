@@ -5,6 +5,7 @@ const $desktopMenu = document.querySelector(".desktop-menu");
 const $mobileMenu = document.querySelector(".mobile-menu");
 const $shoppingCart = document.querySelector("#shopping-cart");
 const $productDetail = document.querySelector("#product-detail");
+const $productDetailCloseBtn = document.querySelector(".product-detail-close");
 const $cardsContainer = document.querySelector(".cards-container");
 
 function closeMenus() {
@@ -63,6 +64,7 @@ function openProductDetail() {
 $menuEmail.addEventListener("click", toggleDesktopMenu);
 $burgerMenu.addEventListener("click", toggleMobileMenu);
 $shoppingCartBtn.addEventListener("click", toggleShoppingCart);
+$productDetailCloseBtn.addEventListener("click", closeProductDetail);
 
 const productList = [
     {
